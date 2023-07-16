@@ -5,11 +5,33 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Work Sans', sans-serif;
+   
 }
-.header-conainer{
+a{
+    color: #131313;
+    text-decoration: none;
+}
+
+/* nav-section-style-goes-here  */
+nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 144, 14, 0.10);
+    padding:50px 228px;
 }
-.menu-side ul li{
-    display: inline-block;
+nav>ul{
+    display: flex;
+    
+}
+nav ul li{
+   list-style: none;
+   margin-right: 30px;
+   font-weight: 500;
+   font-size: 1.2rem;
+
+}
+.nav-tittle{
+    color: #131313;
+    font-size: 2.1rem;
 }
