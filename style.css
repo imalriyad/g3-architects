@@ -1,28 +1,44 @@
 /* Work sans fonts import from google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&family=Work+Sans:wght@400;500;600;700&display=swap');
 
+/* shared-styles  */
 *{
     padding: 0px;
     margin: 0px;
     font-family: 'Work Sans', sans-serif;
    
 }
+
 a{
     color: #131313;
     text-decoration: none;
 }
+.primary-btn{
+    color: #131313;
+    border-radius: 6px;
+    background: #FF900E;
+    border: 0;
+    padding: 18px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffff;
+    cursor: pointer;
+}
 
 /* nav-section-style-goes-here  */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding:50px 228px;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 144, 14, 0.10);
-    padding:50px 228px;
+    
 }
 nav>ul{
     display: flex;
-    
+    justify-content: center;
 }
 nav ul li{
    list-style: none;
@@ -31,7 +47,64 @@ nav ul li{
    font-size: 1.2rem;
 
 }
+
 .nav-tittle{
     color: #131313;
     font-size: 2.1rem;
 }
+/* Banner-part-style-here  */
+.banner-content{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-tittle{
+    color: #131313;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: 50px;
+    
+}
+.banner-description{
+    color: #727272;
+    font-size: 1rem;
+    margin: 25px 0px;
+
+}
+.main-banner img{
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* media query for hedaer section  */
+/* For mobile devices  */
+@media screen and (max-width:576px)  {
+   header{
+   padding: 10px;
+   }
+   .banner-tittle{
+    font-size: 2rem;
+    padding: 0px;
+   }
+  
+   nav{
+    flex-direction: column;
+    gap: 15px;
+   }
+}
+ @media screen and (min-width:576px) and (max-width:960px) {
+    nav{
+        flex-direction: column;
+        gap: 15px;
+       }
+    nav ul{
+        display: flex;
+        margin: 0px;
+    }
+    .banner-tittle{
+        font-size: 2rem;
+       }
+       header{
+        padding: 10px;
+       }
+ }
