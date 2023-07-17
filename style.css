@@ -141,14 +141,21 @@ main {
     font-size: 1rem;
     color: #727272;
     line-height: 26px;
+    margin-top: 20px;
 }
 
 .card-container{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    
+     
 }
+.facts-text{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+}
+
 .card{
     text-align: center;
     border-radius: 8px;
@@ -171,7 +178,12 @@ main {
     color: #727272;
     margin-top: 8px;
 }
-
+/* sponsor-ship-container */
+.sponsar-ship{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
 
 /* media query for hedaer section  */
 /* For mobile devices  */
@@ -187,17 +199,20 @@ main {
         margin-top: 40px;
     }
 
-    nav ,.team-container {
+    nav ,.team-container,.card-container {
         flex-direction: column;
         gap: 25px;
     }
     .team-image{
         grid-template-columns: 1fr;
     }
-    .team-content {
+    .team-content{
         padding: 40px;
-        
-    }    
+    }  
+    .card{
+        margin-left: 40px;
+        margin-right: 40px;
+    }  
 
 }
 
