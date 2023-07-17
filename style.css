@@ -247,6 +247,19 @@ main {
     margin-top: 60px;
 }
 
+/* footer  */
+.footer{
+    border-radius: 8px;
+    background-color: #FFF4E7;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 39px;
+    text-align: center;
+    color: #131313;
+    font-size: 1.2rem;
+    margin-top: 100px;
+}
+
 /* media query for hedaer section  */
 /* For mobile devices  */
 @media screen and (max-width:576px) {
@@ -316,6 +329,10 @@ main {
         font-size: 0.6rem;
         max-width: 100%;
         margin: 15px auto;
+    }
+    .footer{
+        font-size: .6rem;
+        max-width: 100%;
     }
 }
 
