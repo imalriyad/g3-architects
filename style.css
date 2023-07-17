@@ -199,7 +199,7 @@ main {
         margin-top: 40px;
     }
 
-    nav ,.team-container,.card-container {
+    nav ,.team-container,.card-container, .sponsar-ship {
         flex-direction: column;
         gap: 25px;
     }
@@ -209,11 +209,14 @@ main {
     .team-content{
         padding: 40px;
     }  
-    .card{
-        margin-left: 40px;
-        margin-right: 40px;
-    }  
-
+  .card{
+  width: 50%;
+  margin: 0 auto;
+  }
+  .sponsor-card img{
+    margin-bottom: 15px;
+    width: 140px;
+  }
 }
 
 /* for medium devices  */
