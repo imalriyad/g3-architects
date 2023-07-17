@@ -2,23 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&family=Work+Sans:wght@400;500;600;700&display=swap');
 
 /* shared-styles  */
-*{
+* {
     padding: 0px;
     margin: 0px;
     font-family: 'Work Sans', sans-serif;
-   
+
 }
 
-a{
+a {
     color: #131313;
     text-decoration: none;
 }
-.primary-btn{
+
+.primary-btn {
     color: #131313;
     border-radius: 6px;
     background: #FF900E;
     border: 0;
-    padding: 18px 22px;
+    padding: 1rem 1.2rem;
     font-size: 1rem;
     font-weight: 600;
     color: #ffff;
@@ -26,85 +27,199 @@ a{
 }
 
 /* nav-section-style-goes-here  */
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
-    padding:50px 228px;
+    padding: 50px 228px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
-nav>ul{
+
+nav>ul {
     display: flex;
     justify-content: center;
 }
-nav ul li{
-   list-style: none;
-   margin-right: 30px;
-   font-weight: 500;
-   font-size: 1.2rem;
+
+nav ul li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1.2rem;
 
 }
 
-.nav-tittle{
+.nav-tittle {
     color: #131313;
     font-size: 2.1rem;
 }
+
 /* Banner-part-style-here  */
-.banner-content{
+.banner-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
-.banner-tittle{
+
+.banner-tittle {
     color: #131313;
     font-size: 3.5rem;
     font-weight: 700;
-    margin-top: 50px;
-    
+    margin-top: 100px;
+
 }
-.banner-description{
+
+.banner-description {
     color: #727272;
     font-size: 1rem;
     margin: 25px 0px;
 
 }
-.main-banner img{
+
+.main-banner img {
     margin-top: 50px;
     width: 100%;
 }
 
+
+/* main-section-start here  */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.team-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+}
+
+.team-content {
+    padding: 30px 0px;
+    padding-left: 76px;
+    
+}
+
+.quick {
+    color: #727272;
+    font-weight: 500;
+}
+
+.of {
+    color: #131313;
+}
+
+.features {
+    color: #FF900E;
+}
+
+.team-tittle {
+    font-size: 2.8125rem;
+    font-weight: 700;
+   
+}
+.team-description {
+    font-size: 1rem;
+    color: #727272;
+    line-height: 26px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Facts section goes here  */
+.facts-description{
+    font-size: 1rem;
+    color: #727272;
+    line-height: 26px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.card{
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 30px;
+}
+.card img{
+    width: 35px;
+    height: 35px;
+}
+.card-stats{
+  font-size: 2rem;
+  color: #131313;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.card-tittle{
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 8px;
+}
+
+
 /* media query for hedaer section  */
 /* For mobile devices  */
-@media screen and (max-width:576px)  {
-   header{
-   padding: 10px;
-   }
-   .banner-tittle{
-    font-size: 2rem;
-    padding: 0px;
-   }
-  
-   nav{
-    flex-direction: column;
-    gap: 15px;
-   }
+@media screen and (max-width:576px) {
+   
+    header {
+        padding: 10px;
+    }
+
+    .banner-tittle {
+        font-size: 2rem;
+        padding: 0px;
+        margin-top: 40px;
+    }
+
+    nav ,.team-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .team-image{
+        grid-template-columns: 1fr;
+    }
+    .team-content {
+        padding: 40px;
+        
+    }    
+
 }
- @media screen and (min-width:576px) and (max-width:960px) {
-    nav{
+
+/* for medium devices  */
+@media screen and (min-width:576px) and (max-width:1082px) {
+    nav,.team-container {
         flex-direction: column;
         gap: 15px;
-       }
-    nav ul{
+    }
+
+    nav ul {
         display: flex;
         margin: 0px;
     }
-    .banner-tittle{
+
+    .banner-tittle {
         font-size: 2rem;
-       }
-       header{
+        margin-top: 50px;
+    }
+
+    header {
         padding: 10px;
-       }
- }
+    }
+}
+
